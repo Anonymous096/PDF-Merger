@@ -1,0 +1,20 @@
+The main thing to remember is to run the server properly without crashing the server.js file and the node modules and json files should be in the same folder ifi the server.js file wil be in another folder ut will give the error 1080 which is near to impossible to solve
+To refresh the server or to reload the server after every change we have to install nodemon by using the command:
+npm i -g nodemon
+Sometimes in mac OS or linux it gives error so what you have to do is type a command:
+$ sudo su
+after that it will ask you about your system's password give and then after that write the same a command and you are good to go
+Now to run it type:
+$ nodemon server.js
+It will simultaneously refresh/reload the localhost port
+
+<todo>
+So test the pdf merger tool shown in the video and test it for more than 3 pdfs without giving any arguments...
+</todo>
+
+How to make
+Make a webpage
+Make a form and it should upload multiple files
+Use multer to upload multiple files in node server it will automatically make an upload folder and save the files there
+Make a separate js file for the merger library and use export so that you can import it as a module in the server.js 
+Make a function of merger tool library in its .js file and when you export it the function should accept two arguments as the max number of pdf that can be merged is two or else as many as possible try it.
